@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Markys Prieto — Graphic Design, Web Development and UX/UI Portfolio">
+<title>Markys Prieto — Portfolio</title>
+<style>
+:root{--bg:#f4f2ed;--ink:#20211e;--muted:#77786f;--line:#d9d7cf;--accent:#d9f477}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);font-size:12px}
+.brand{font-weight:800;letter-spacing:-.04em;font-size:15px}
+nav{display:flex;gap:22px;align-items:center}
+button{font:inherit;cursor:pointer}
+.lang,.filter{border:1px solid var(--line);background:transparent;border-radius:30px;padding:8px 13px;font-size:12px}
+.hero{padding:100px 0 75px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted);font-weight:bold}
+h1{font-size:clamp(52px,9vw,100px);letter-spacing:-.085em;line-height:.94;margin:25px 0}
+h1 span{color:var(--muted)}
+.lead{font-size:19px;max-width:570px;color:#55564f}
+.cta{display:inline-block;background:var(--ink);color:white;padding:13px 20px;border-radius:30px;margin-top:15px;font-size:12px}
+section{padding:70px 0}
+h2{font-size:clamp(34px,5vw,55px);letter-spacing:-.06em;line-height:1.05;margin:12px 0 30px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:25px}
+.filter.active{background:var(--ink);color:white}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}
+.project[hidden]{display:none}
+.art{aspect-ratio:1.35;background:#dfe3d7;display:flex;align-items:center;justify-content:center;padding:25px;overflow:hidden}
+.project:nth-child(2) .art{background:#dedbd3}
+.project:nth-child(3) .art{background:#e3dcef}
+.project:nth-child(4) .art{background:#d9e5df}
+.poster{background:#faf8f0;padding:25px;width:78%;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 15px 30px #0001}
+.poster strong{font-size:clamp(26px,4vw,48px);letter-spacing:-.08em;line-height:.9}
+.poster small{font-size:10px;letter-spacing:.12em}
+.meta{display:flex;justify-content:space-between;gap:12px;padding-top:13px}
+.meta h3{font-size:18px;margin:0;letter-spacing:-.03em}
+.meta p{font-size:12px;color:var(--muted);margin:4px 0}
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:55px}
+.about p{font-size:18px}
+.skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.skills span{border:1px solid var(--line);border-radius:30px;padding:7px 11px;font-size:11px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;border-top:1px solid var(--line);padding-top:25px}
+.services h3{font-size:20px}
+.services p{font-size:14px;color:var(--muted)}
+.contact{background:var(--ink);color:var(--bg);padding:70px 0;margin-top:30px}
+.contact h2{font-size:clamp(42px,7vw,80px);max-width:800px}
+.contact a:not(.social){text-decoration:underline;text-underline-offset:5px}
+footer{padding:24px 0;display:flex;justify-content:space-between;gap:15px;font-size:11px;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin-top:20px}
+@media(max-width:650px){
+ .wrap{width:calc(100% - 30px)}
+ header{gap:12px}nav{gap:12px}nav a{display:none}
+ .hero{padding:70px 0 45px}
+ section{padding:50px 0}
+ .projects{gap:24px 12px}
+ .art{padding:10px}
+ .poster{padding:14px;min-height:145px}
+ .meta{display:block}.meta h3{font-size:15px}
+ .about,.services{grid-template-columns:1fr;gap:20px}
+ footer{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#home">MARKYS PRIETO®</a>
+  <nav>
+    <a href="#work" data-es="Proyectos" data-en="Work">Proyectos</a>
+    <a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a>
+    <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+    <button class="lang" id="language">EN</button>
+  </nav>
+</header>
+
+<main>
+<div class="wrap hero" id="home">
+  <div class="eyebrow" data-es="Diseño gráfico · Web · UX/UI" data-en="Graphic design · Web · UX/UI">Diseño gráfico · Web · UX/UI</div>
+  <h1 data-es="Diseño con intención.<br><span>Digital por naturaleza.</span>" data-en="Design with intention.<br><span>Digital by nature.</span>">Diseño con intención.<br><span>Digital por naturaleza.</span></h1>
+  <p class="lead" data-es="Creo identidades visuales, contenido digital y experiencias web que conectan marcas con personas." data-en="I create visual identities, digital content and web experiences that connect brands with people.">Creo identidades visuales, contenido digital y experiencias web que conectan marcas con personas.</p>
+  <a class="cta" href="#work" data-es="EXPLORAR PROYECTOS ↘" data-en="EXPLORE MY WORK ↘">EXPLORAR PROYECTOS ↘</a>
+</div>
+
+<section class="wrap" id="work">
+  <div class="eyebrow" data-es="Una selección de trabajos" data-en="A selection of my work">Una selección de trabajos</div>
+  <h2 data-es="Proyectos destacados." data-en="Selected projects.">Proyectos destacados.</h2>
+  <div class="filters">
+    <button class="filter active" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+    <button class="filter" data-filter="graphic" data-es="Diseño gráfico" data-en="Graphic design">Diseño gráfico</button>
+    <button class="filter" data-filter="web" data-es="Web" data-en="Web">Web</button>
+    <button class="filter" data-filter="ux" data-es="UX/UI" data-en="UX/UI">UX/UI</button>
+  </div>
+  <div class="projects">
+    <article class="project" data-category="web">
+      <a href="https://markysprieto.github.io/agencia-viajes/" target="_blank" rel="noopener">
+        <div class="art"><div class="poster"><small>VIAJA DIFERENTE</small><strong>Tu próxima historia empieza aquí.</strong><small>WEB DESIGN · DEVELOPMENT</small></div></div>
+        <div class="meta"><div><h3>Viaja Diferente</h3><p data-es="Landing page · Diseño y desarrollo web" data-en="Landing page · Web design and development">Landing page · Diseño y desarrollo web</p></div><span>01 ↗</span></div>
+      </a>
+    </article>
+    <article class="project" data-category="web">
+      <a href="https://www.jirehinternational.cl/" target="_blank" rel="noopener">
+        <div class="art"><div class="poster"><small>JIREH INTERNATIONAL</small><strong>Conectando mercados.</strong><small>CORPORATE WEBSITE</small></div></div>
+        <div class="meta"><div><h3>Jireh International</h3><p data-es="Sitio corporativo · Presencia digital" data-en="Corporate website · Digital presence">Sitio corporativo · Presencia digital</p></div><span>02 ↗</span></div>
+      </a>
+    </article>
+    <article class="project" data-category="ux">
+      <a href="https://www.behance.net/gallery/211923343/Investigacion-UX-UI-Tech-Future" target="_blank" rel="noopener">
+        <div class="art"><div class="poster"><small>UX/UI CASE STUDY</small><strong>Tech Future</strong><small>RESEARCH · EXPERIENCE · INTERFACE</small></div></div>
+        <div class="meta"><div><h3>Tech Future</h3><p data-es="Investigación UX/UI · Caso de estudio" data-en="UX/UI research · Case study">Investigación UX/UI · Caso de estudio</p></div><span>03 ↗</span></div>
+      </a>
+    </article>
+    <article class="project" data-category="graphic">
+      <a href="https://www.behance.net/markysprieto1" target="_blank" rel="noopener">
+        <div class="art"><div class="poster"><small>IDENTIDAD · DIRECCIÓN DE ARTE</small><strong>Ideas que se ven.</strong><small>BRANDING · DIGITAL · PRINT</small></div></div>
+        <div class="meta"><div><h3 data-es="Diseño gráfico y dirección de arte" data-en="Graphic design and art direction">Diseño gráfico y dirección de arte</h3><p data-es="Diseño corporativo · Contenido digital" data-en="Corporate design · Digital content">Diseño corporativo · Contenido digital</p></div><span>04 ↗</span></div>
+      </a>
+    </article>
+  </div>
+  <p class="note" data-es="Los gráficos son composiciones provisionales. Sustitúyelos por imágenes originales de tus proyectos antes de presentar el sitio como versión definitiva." data-en="These are placeholder compositions. Replace them with original project images before presenting the site as final.">Los gráficos son composiciones provisionales. Sustitúyelos por imágenes originales de tus proyectos antes de presentar el sitio como versión definitiva.</p>
+</section>
+
+<section class="wrap" id="about">
+  <div class="about">
+    <div><div class="eyebrow" data-es="Un poco sobre mí" data-en="A little about me">Un poco sobre mí</div><h2 data-es="Diseño visual.<br>Pensamiento digital." data-en="Visual design.<br>Digital thinking.">Diseño visual.<br>Pensamiento digital.</h2></div>
+    <div>
+      <p data-es="Soy Markys Prieto, diseñadora gráfica y desarrolladora web. Combino sensibilidad visual y criterio técnico para crear soluciones digitales claras, funcionales y coherentes." data-en="I'm Markys Prieto, a graphic designer and web developer. I combine visual sensitivity and technical thinking to create clear, functional and cohesive digital solutions.">Soy Markys Prieto, diseñadora gráfica y desarrolladora web. Combino sensibilidad visual y criterio técnico para crear soluciones digitales claras, funcionales y coherentes.</p>
+      <p data-es="Tengo experiencia creando contenido visual, piezas para redes sociales, materiales corporativos, interfaces y sitios web. He trabajado con marcas de distintos sectores y equipos multidisciplinarios." data-en="I have experience creating visual content, social media assets, corporate materials, interfaces and websites. I've worked with brands across different industries and multidisciplinary teams.">Tengo experiencia creando contenido visual, piezas para redes sociales, materiales corporativos, interfaces y sitios web. He trabajado con marcas de distintos sectores y equipos multidisciplinarios.</p>
+      <div class="skills"><span>Illustrator</span><span>Photoshop</span><span>InDesign</span><span>Figma</span><span>HTML / CSS</span><span>Bootstrap</span><span>WordPress</span><span>UX/UI</span><span>Social media</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow" data-es="Cómo puedo aportar" data-en="How I can help">Cómo puedo aportar</div>
+  <h2 data-es="Diseño que trabaja contigo." data-en="Design that works with you.">Diseño que trabaja contigo.</h2>
+  <div class="services">
+    <div><div class="eyebrow">01 / VISUAL</div><h3 data-es="Diseño gráfico" data-en="Graphic design">Diseño gráfico</h3><p data-es="Identidad visual, campañas, piezas corporativas y contenido para redes sociales." data-en="Visual identity, campaigns, corporate assets and social media content.">Identidad visual, campañas, piezas corporativas y contenido para redes sociales.</p></div>
+    <div><div class="eyebrow">02 / DIGITAL</div><h3 data-es="Diseño y desarrollo web" data-en="Web design and development">Diseño y desarrollo web</h3><p data-es="Landing pages y sitios responsive que combinan claridad visual y facilidad de uso." data-en="Landing pages and responsive websites that combine visual clarity and usability.">Landing pages y sitios responsive que combinan claridad visual y facilidad de uso.</p></div>
+    <div><div class="eyebrow">03 / EXPERIENCE</div><h3>UX/UI</h3><p data-es="Investigación, wireframes e interfaces centradas en las necesidades de las personas." data-en="Research, wireframes and interfaces centered on people's needs.">Investigación, wireframes e interfaces centradas en las necesidades de las personas.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" data-es="¿Tienes un proyecto en mente?" data-en="Have a project in mind?">¿Tienes un proyecto en mente?</div>
+    <h2 data-es="Hagamos algo que valga la pena ver." data-en="Let's make something worth seeing.">Hagamos algo que valga la pena ver.</h2>
+    <p data-es="Disponible para oportunidades remotas, colaboraciones y proyectos freelance." data-en="Open to remote opportunities, collaborations and freelance projects.">Disponible para oportunidades remotas, colaboraciones y proyectos freelance.</p>
+    <p><a href="mailto:markysprieto@gmail.com">markysprieto@gmail.com ↗</a></p>
+    <p><a href="https://www.behance.net/markysprieto1" target="_blank" rel="noopener">Behance ↗</a> · <a href="https://github.com/Markysprieto" target="_blank" rel="noopener">GitHub ↗</a></p>
+  </div>
+</section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> MARKYS PRIETO</span><span>Designed with intention.</span><a href="#home">↑ TOP</a></footer>
+
+<script>
+let lang="es";
+document.getElementById("language").addEventListener("click",()=>{
+  lang=lang==="es"?"en":"es";
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-es][data-en]").forEach(el=>{
+    el.innerHTML=el.dataset[lang];
+  });
+  document.getElementById("language").textContent=lang==="es"?"EN":"ES";
+});
+document.querySelectorAll(".filter").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll(".project").forEach(project=>{
+      project.hidden=btn.dataset.filter!=="all"&&project.dataset.category!==btn.dataset.filter;
+    });
+  });
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
